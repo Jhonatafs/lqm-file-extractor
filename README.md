@@ -91,4 +91,4 @@ This project is licensed under the MIT License. See the [LICENSE](/LICENSE) file
 
 ## Portuguese Version
 
-For the Portuguese version of this README, please refer to [README.md](/README.md).
+For the Portuguese version of this README, please refer to [README.md](/README-PT-BR.md).
