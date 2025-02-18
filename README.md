@@ -18,7 +18,7 @@ Python tool to extract text content from .lqm and .jlqm (QuickMemo+) files.
 1. Download the `extract.py` file:
 
 ```
-wget https://github.com/Jhonatafs/lqm-file-extractor/blob/master/extract.py
+wget https://raw.githubusercontent.com/pporadzisz/lqm-file-extractor/master/extract.py
 ```
 
 2. Make sure you have Python 3 installed:
@@ -91,4 +91,4 @@ This project is licensed under the MIT License. See the [LICENSE](/LICENSE) file
 
 ## Portuguese Version
 
-For the Portuguese version of this README, please refer to [README.md](/README-PT-BR.md).
+For the Portuguese version of this README, please refer to [README.md](/README.md).
