@@ -1,77 +1,94 @@
 # lqm-file-extractor
-Small Python tool for extract text content from lqm and jlqm file format (QuickMemo+)
 
+Python tool to extract text content from .lqm and .jlqm (QuickMemo+) files.
+→ [Original Project](https://github.com/pporadzisz/lqm-file-extractor) ←
 
-# Instalation (Linux):
+## Features
 
-Download extract.py file
+- **Extraction:** Extracts files from .lqm to their respective folders.
+- **.txt Files:** Creates .txt files from the written content of each extracted .jlqm file.
+- **Organizes Output:** All extracted .txt files are saved in a single folder called **extracted_texts**.
+- **Includes Metadata:** Adds creation date, category, and memo ID to the extracted text files.
+- **Error Handling:** Continues processing even if some files fail to extract and lists the errors at the end.
+
+## Installation
+
+### Linux
+
+1. Download the `extract.py` file:
+
+```
 wget https://raw.githubusercontent.com/pporadzisz/lqm-file-extractor/master/extract.py
+```
 
+2. Make sure you have Python 3 installed:
 
-# Usage:
+```
+python3 --version
+```
 
+## How to Use
+
+Run the script by passing the path of the folder containing the .lqm files:
+
+```
 python3 extract.py path_to_lqm_files
+```
 
+### Example
 
-# Example:
+#### Input
 
-python3 extract.py /home/radny/Downloads/quickmemo_plus
+```
+python3 extract.py /home/user/Downloads/quickmemo_plus
+```
 
+#### Output
 
-Result:
+```
+##### QuickMemo+_190212_021335(1).lqm
 
-'#####        QuickMemo+_190212_021335(1).lqm          #####
-
-Text:
-Nokia 6.1
-Lg q7
-
-
-'#####        QuickMemo+_190212_021340(1).lqm          #####
-
-Text:
-My second text script
-
-
-'#####        QuickMemo+_190212_021338(2).lqm          #####
+Creation Date: 2019-02-12 02:13:35
+Category: My memos
+Memo ID: 123
 
 Text:
-96
+I LOVE LINUX
 
+##### QuickMemo+_190212_021340(1).lqm
 
+Creation Date: 2019-02-12 02:13:40
+Category: My memos
+Memo ID: 124
 
+Text:
+My second text
+```
 
-# Step by step
+## Step-by-Step Guide
 
-All you have to do is :
+1. Use the Share option in QuickMemo+ on your Android device.
+2. Select all the notes and click the Share button.
+3. Choose the QuickMemo+ File (.lqm) option.
+4. Save the .lqm files to Google Drive or local storage.
+5. Download the .lqm files to a single folder on your computer.
+6. Download the `extract.py` script.
+7. Run the script in the terminal:
 
-1.Use Share option in QuickMemo+ on Android device. 
+   ```bash
+   python3 extract.py /path/to/your/lqm/files
+   ```
 
-2."Select all" and click "Share" button.
+8. Check the `extracted_texts` folder for the extracted .txt files.
 
-3.Select "QuickMemo+ file (.lqm)" option.
+## Contributing
 
-4.Save *.lqm files into Google Drive.
+Feel free to fork this project and submit pull requests with improvements. For significant changes, please open an issue first to discuss the changes.
 
-5.Download files from Google Drive into one local folder.
+## License
 
-6.Download extractor.py file
+This project is licensed under the MIT License. See the [LICENSE](/LICENSE) file for details.
 
-7.Please run command in terminal : 
+## Portuguese Version
 
-python3 extract.py /home/radny/Downloads/quickmemo
-
-
-And as a result you'll see:
-
-'##### QuickMemo+_190212_021335(1).lqm #####
-
-Text: Nokia 6.1 Lg q7
-
-'##### QuickMemo+_190212_021340(1).lqm #####
-
-Text: My second text script
-
-'##### QuickMemo+_190212_021338(2).lqm #####
-
-Text: 96
+For the Portuguese version of this README, please refer to [README.md](/README.md).
