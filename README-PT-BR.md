@@ -5,6 +5,7 @@ Ferramenta Python para extrair conteúdo de texto de arquivos .lqm e .jlqm (Quic
 → [Projeto Original](https://github.com/pporadzisz/lqm-file-extractor) ←
 
 ## Funcionalidades
+
 - **Extração:** Extrai os arquivos do .lqm para suas respectivas pastas.
 - **Arquivos .txt:** Cria arquivos .txt do conteudo escrito de cada arquivo .jlqm extraido
 - **Organiza a saída:** Todos os arquivos .txt extraídos são salvos em uma pasta única chamada **extracted_texts**.
@@ -18,7 +19,7 @@ Ferramenta Python para extrair conteúdo de texto de arquivos .lqm e .jlqm (Quic
 1. Baixe o arquivo extract.py:
 
 ```
-wget [https://raw.githubusercontent.com/pporadzisz/lqm-file-extractor/master/extract.py](https://github.com/Jhonatafs/lqm-file-extractor/blob/master/extract.py)
+wget https://github.com/Jhonatafs/lqm-file-extractor/blob/master/extract.py
 ```
 
 2. Certifique-se de que o Python 3 está instalado:
